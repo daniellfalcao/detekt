@@ -7,6 +7,7 @@ import org.jetbrains.kotlin.psi.KtFile
  * Can be used to combine different rules which do similar work like
  * scanning the source code line by line to increase performance.
  */
+@Suppress("RequiresTypeResolution")
 abstract class MultiRule : BaseRule() {
 
     abstract val rules: List<Rule>
